@@ -11,6 +11,9 @@
             padding: 0;
             font-family: Arial, sans-serif;
             background-color: #383838; /* Cor de fundo alterada */
+            height: 100%;
+            display: flex;
+            flex-direction: column;
         }
 
         /* Container principal */
@@ -19,6 +22,7 @@
             flex-wrap: wrap;
             justify-content: center;
             padding: 20px;
+            flex: 1; /* Faz o container ocupar o espaço disponível */
         }
 
         /* Estilo para cada produto */
@@ -51,7 +55,7 @@
         /* Preço do produto */
         .product .price {
             font-size: 1.5em;
-            color: rgb(235, 233, 233)0; /* Cor de destaque para o preço */
+            color: rgb(235, 233, 233); /* Cor de destaque para o preço */
             margin-bottom: 15px;
         }
 
@@ -137,6 +141,17 @@
         .login-form button:hover {
             background-color: #0a00a0;
         }
+
+        /* Rodapé */
+        footer {
+            background-color: #222222;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
@@ -144,7 +159,7 @@
     <div class="container">
         <!-- Produto 1 -->
         <div class="product">
-            <img src="https://www.google.com/imgres?q=combat%20preta&imgurl=https%3A%2F%2Fcdn.awsli.com.br%2F600x700%2F1759%2F1759278%2Fproduto%2F101472699%2Fudyndhcd0xxmfjnnttdc-luyez5emm1.jpg&imgrefurl=https%3A%2F%2Fwww.lacustretactical.com.br%2Fcombat-shirt-preta-fox-boy&docid=FhD6B9mp2snudM&tbnid=O_nVfYHZbQ8DUM&vet=12ahUKEwiXhObzrbmLAxU9F7kGHWM-NtsQM3oECG0QAA..i&w=525&h=700&hcb=2&ved=2ahUKEwiXhObzrbmLAxU9F7kGHWM-NtsQM3oECG0QAA" alt="Produto 1">
+            <img src="https://cdn.awsli.com.br/600x700/1759/1759278/produto/101472699/udyndhcd0xxmfjnnttdc-luyez5emm1.jpg" alt="Produto 1">
             <div class="name">Gandola Multcamblack.</div>
             <div class="price">R$ 120,00</div>
             <button class="buy-button" onclick="openLoginModal('https://www.fairsoft.com.br/gandola-camuflada-commando-multicam-black')">Comprar</button>
@@ -152,7 +167,7 @@
 
         <!-- Produto 2 -->
         <div class="product">
-            <img src="ANd9GcQWTwu_rq3TMPsL5Kzeug0RlblfmCZOjk9worhmBC8tqbRLlBzFMprmsN6VDipTPtI3HpJVPlV9FVv5t1eSIDm6MUwlkJZIMC4vXHZXxHPiNc8NKpXKfBUr655szGqpUKhB_3umtHi07Q" alt="Produto 2">
+            <img src="https://www.lacustretactical.com.br/media/Produto/101472699/udyndhcd0xxmfjnnttdc-luyez5emm1.jpg" alt="Produto 2">
             <div class="name">Calça Multcamblack</div>
             <div class="price">R$ 99,90</div>
             <button class="buy-button" onclick="openLoginModal('https://www.lojadacarabina.com.br/calca-combat-camuflado-multicam-black-belica.html')">Comprar</button>
