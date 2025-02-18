@@ -42,10 +42,12 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    background-color: #444;
 }
 
 /* Estilo do perfil */
@@ -121,18 +123,6 @@ form button:hover {
     width: 100%;
     height: auto;
     display: block;
-    margin-bottom: 20px;
-}
-
-.product-container .name {
-    font-size: 22px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.product-container .price {
-    font-size: 20px;
-    color: #28a745;
     margin-bottom: 20px;
 }
 
