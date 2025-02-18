@@ -12,19 +12,22 @@ body {
     color: #333;
 }
 
+/* Cabeçalho */
 header {
     background-color: #333;
     color: white;
-    padding: 15px;
+    padding: 15px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+/* Logo */
 header .logo h1 {
     font-size: 24px;
 }
 
+/* Menu horizontal */
 nav ul {
     list-style: none;
     display: flex;
@@ -45,24 +48,32 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-.profile button {
-    background-color: #444;
-    color: white;
-    padding: 10px;
-    border: none;
+/* Estilo do perfil */
+.profile {
+    width: 40px;
+    height: 40px;
+    background-color: #bbb;
+    border-radius: 50%;
     cursor: pointer;
 }
 
-.profile button:hover {
-    background-color: #555;
+.profile-img {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.profile:hover {
+    background-color: #444;
 }
 
 /* Formulário de login */
 #loginMenu {
     background-color: white;
     position: absolute;
-    top: 50px;
-    right: 10px;
+    top: 60px;
+    right: 30px;
     padding: 20px;
     border-radius: 5px;
     width: 250px;
@@ -96,19 +107,32 @@ form button:hover {
     background-color: #444;
 }
 
-/* Estilos para a página de produtos */
-.container {
-    max-width: 1200px;
+/* Estilos para a página de produto */
+.product-container {
+    max-width: 800px;
     margin: 20px auto;
     padding: 20px;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-.container img {
-    max-width: 100%;
+.product-container img {
+    width: 100%;
     height: auto;
     display: block;
+    margin-bottom: 20px;
+}
+
+.product-container .name {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-container .price {
+    font-size: 20px;
+    color: #28a745;
     margin-bottom: 20px;
 }
 
@@ -125,9 +149,11 @@ form button:hover {
     background-color: #218838;
 }
 
+/* Rodapé */
 footer {
     text-align: center;
     padding: 10px;
     background-color: #333;
     color: white;
+    margin-top: 30px;
 }

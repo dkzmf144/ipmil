@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja Online - Produtos IPMIL</title>
-    <link rel="stylesheet" href="style.css"> <!-- Referência ao arquivo CSS -->
+    <title>Gandola Multcamblack G e GG</title>
+    <link rel="stylesheet" href="gandola_style.css"> <!-- Referência ao arquivo CSS -->
 </head>
 <body>
-    <!-- Menu superior -->
+    <!-- Cabeçalho -->
     <header>
         <div class="logo">
             <h1>IPMIL Store</h1>
         </div>
+        <!-- Menu de navegação -->
         <nav>
             <ul>
+                <li><a href="index.html">Início</a></li>
                 <li><a href="gandola_gg.html">Gandola</a></li>
                 <li><a href="calÇa.html">Calça</a></li>
                 <li><a href="coturno.html">Coturno</a></li>
@@ -21,33 +23,39 @@
                 <li><a href="combat.html">Combat</a></li>
             </ul>
         </nav>
-        <!-- Perfil e Login -->
-        <div class="profile">
-            <button id="loginBtn">Perfil</button>
-            <div id="loginMenu" class="hidden">
-                <form id="loginForm">
-                    <label for="username">Usuário:</label>
-                    <input type="text" id="username" name="username" required>
-                    <label for="password">Senha:</label>
-                    <input type="password" id="password" name="password" required>
-                    <button type="submit">Fazer Login</button>
-                </form>
-            </div>
+        <!-- Ícone de perfil -->
+        <div class="profile" id="profileIcon">
+            <div class="profile-img"></div>
         </div>
     </header>
 
-    <div class="container">
-        <h2>Bem-vindo à nossa loja online</h2>
-        <p>Escolha uma categoria acima para explorar nossos produtos.</p>
+    <!-- Container do produto -->
+    <div class="product-container">
+        <img src="https://cdn.awsli.com.br/800x800/1636/1636598/produto/62562918/990c091b14.jpg" alt="Gandola Multcamblack G e GG">
+        <div class="name">Gandola Multcamblack G e GG</div>
+        <div class="price">R$ 120,00</div>
+        <button class="buy-button" onclick="window.location.href='https://www.fairsoft.com.br/gandola-camuflada-commando-multicam-black'">Comprar</button>
     </div>
 
+    <!-- Formulário de Login -->
+    <div id="loginMenu" class="hidden">
+        <form id="loginForm">
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Fazer Login</button>
+        </form>
+    </div>
+
+    <!-- Rodapé -->
     <footer>
         <p>&copy; 2025 DKZMF144.</p>
     </footer>
 
     <script>
-        // Exibir ou esconder o menu de login
-        document.getElementById('loginBtn').addEventListener('click', function() {
+        // Função para mostrar/ocultar o menu de login
+        document.getElementById('profileIcon').addEventListener('click', function() {
             const loginMenu = document.getElementById('loginMenu');
             loginMenu.classList.toggle('hidden');
         });
