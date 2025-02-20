@@ -1,3 +1,4 @@
+/* Estilo geral do body */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,9 +7,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;  /* Garante que o conteúdo ocupe a altura total da tela */
+    flex-direction: column;  /* Garante que o conteúdo não se sobreponha */
 }
 
+/* Container do produto */
 .product-container {
     text-align: center;
     background-color: white;
@@ -16,25 +19,31 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 300px;
+    margin-top: 20px; /* Dá um espaço no topo para o conteúdo não grudar na borda */
 }
 
+/* Estilo da imagem do produto */
 .product-container img {
     width: 100%;
     border-radius: 8px;
+    height: auto; /* Garante que a imagem mantenha as proporções corretas */
 }
 
+/* Nome do produto */
 .name {
     font-size: 24px;
     font-weight: bold;
     margin: 10px 0;
 }
 
+/* Preço do produto */
 .price {
     font-size: 18px;
     color: green;
     margin: 10px 0;
 }
 
+/* Estilo do botão de compra */
 .buy-button {
     background-color: #28a745;
     color: white;
@@ -43,12 +52,14 @@ body {
     cursor: pointer;
     border-radius: 5px;
     font-size: 16px;
+    width: 100%;  /* Garante que o botão ocupe toda a largura do container */
 }
 
 .buy-button:hover {
     background-color: #218838;
 }
 
+/* Rodapé */
 footer {
     position: absolute;
     bottom: 10px;
