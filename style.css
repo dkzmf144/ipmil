@@ -20,6 +20,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; /* Permite que o conteúdo se ajuste melhor no celular */
 }
 
 /* Logo */
@@ -147,6 +148,7 @@ footer {
     color: white;
     margin-top: 30px;
 }
+
 /* Estilos para a imagem acima do rodapé */
 .footer-image {
     display: block;
@@ -156,3 +158,53 @@ footer {
     margin-bottom: 20px; /* Espaço entre a imagem e o rodapé */
 }
 
+/* Responsividade - ajustes para telas menores */
+@media (max-width: 768px) {
+    /* Ajustando o cabeçalho */
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Ajustando o menu */
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    /* Formulário de login */
+    #loginMenu {
+        position: static;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .profile {
+        margin-top: 10px;
+    }
+}
+
+/* Responsividade para telas menores (ex: smartphones) */
+@media (max-width: 480px) {
+    /* Ajustando os tamanhos do texto no menu */
+    nav ul li a {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+
+    /* Logo */
+    header .logo h1 {
+        font-size: 20px;
+    }
+
+    /* Ajustes na imagem do footer */
+    .footer-image {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
